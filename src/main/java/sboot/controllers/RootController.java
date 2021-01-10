@@ -125,7 +125,7 @@ public class RootController {
                     String newFolder = auth.getName(); //get logged in username
 //                	String newFolder ="mujify";
 //                    String saveDirectory = "H:\\Netbeans\\SpringMVCMaven\\src\\main\\webapp\\" + newFolder + "/";
-                	String saveDirectory ="/Users/mujtaba/Documents/workspace-spring-tool-suite-4-4.9.0.RELEASE/SpringBoot1.zip_expanded/SpringBoot1/src/main/resources/static/uploadedImages/"+ newFolder +"/";
+                	String saveDirectory ="C:/Users/mujtaba/Documents/workspace-spring-tool-suite-4-4.9.0.RELEASE/SpringBoot1.zip_expanded/SpringBoot1/src/main/resources/static/uploadedImages/"+ newFolder +"/";
 //                    String saveDirectory = "C:\\Users\\mujify\\Documents\\Netbeans\\SpringMVCMaven\\src\\main\\webapp\\" + newFolder + "/";
 //                    String saveDirectory = "/home/muji3009/jvm/apache-tomcat-8.0.9/domains/mujify.com/ROOT/" + newFolder + "/";
 
@@ -136,6 +136,8 @@ public class RootController {
                         System.out.println("creating directory: " + saveDirectory);
                         theDir.mkdir();
                     }
+                    
+//                    saveDirectory="C:/Users/mujtaba/Documents/workspace-spring-tool-suite-4-4.9.0.RELEASE/SpringBoot1.zip_expanded/SpringBoot1/src/main/resources/static/uploadedImages/"+ newFolder +"/";
 
                     multipartFile.transferTo(new File(saveDirectory + fileName));   //Here I Added
                     fileNames.add(fileName);
